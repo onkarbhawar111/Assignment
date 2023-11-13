@@ -1,0 +1,13 @@
+2 JavaScript
+A. Take a sentence as an input and reverse every word in that sentence.
+a. Example - This is a sunny day > shiT si a ynnus yad.
+
+Code in JavaScript:
+
+function reverseWords(sentence) {
+    return sentence.split(' ').map(word => word.split('').reverse().join('')).join(' ');
+}
+
+// Example
+let reversedSentence = reverseWords("This is a sunny day");
+console.log(reversedSentence);
